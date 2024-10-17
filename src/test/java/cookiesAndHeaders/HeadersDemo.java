@@ -1,4 +1,7 @@
 package cookiesAndHeaders;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
+import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
@@ -7,8 +10,7 @@ import static org.hamcrest.Matchers.*;
 public class HeadersDemo {
 
 
-    @Test
-
+    // @Test
     void testHeader(){
         given()
 
@@ -26,6 +28,31 @@ public class HeadersDemo {
 
     }
 
+
+    @Test
+
+    void  getHeader(){
+
+        Response rs = given()
+                .when()
+                .get("https://www.google.com/");
+
+        // Sinlge Header value
+        String headerValue =  rs.getHeader("Content-Type");
+        System.out.println(headerValue);
+        
+        // Get all header info
+        Headers myHeaders = rs.getHeaders();
+        for (Header h:myHeaders) {
+            System.out.println(h.getName() + h.getValue());
+        }
+        
+
+    }
+    
+    
+    
+    
 
 
 }
