@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="M:/QA/api-testing/restAssured/restAssuredTraining">
+        <classes>
+<!--            <class name="httpReq.HttpReq">-->
+<!--                <methods>-->
+<!--                    <include name="getUsers"/>-->
+<!--                    <include name="createUser"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="waysOfCreateReqBody.WaysCreateBody">
+                <methods>
+                    <include name="createStudent"/>
+                    <include name="createStudentUsingJson"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
