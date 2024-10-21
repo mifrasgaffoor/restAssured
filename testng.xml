@@ -3,18 +3,64 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="M:/QA/api-testing/restAssured/restAssuredTraining">
         <classes>
+<!--            <class name="PathAndQueryParameters.PathAndQuery">-->
+<!--                <methods>-->
+<!--                    <include name="pathAndQuery"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="apiChaining.CreateUser">
+                <methods>
+                    <include name="createUserReq"/>
+                </methods>
+            </class>
+            <class name="apiChaining.GetUser">
+                <methods>
+                    <include name="getUserReq"/>
+                </methods>
+            </class>
+            <class name="apiChaining.UpdateUser">
+                <methods>
+                    <include name="updateUserReq"/>
+                </methods>
+            </class>
+            <class name="apiChaining.DeleteUser">
+                <methods>
+                    <include name="deleteUserReq"/>
+                </methods>
+            </class>
+
+
+<!--            <class name="cookiesAndHeaders.CookiesDemo">-->
+<!--                <methods>-->
+<!--                    <include name="getCookie"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="cookiesAndHeaders.HeadersDemo">-->
+<!--                <methods>-->
+<!--                    <include name="getHeader"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="cookiesAndHeaders.LogDemo">-->
+<!--                <methods>-->
+<!--                    <include name="logDemo"/>-->
+<!--                </methods>-->
+<!--            </class>-->
 <!--            <class name="httpReq.HttpReq">-->
 <!--                <methods>-->
 <!--                    <include name="getUsers"/>-->
 <!--                    <include name="createUser"/>-->
 <!--                </methods>-->
 <!--            </class>-->
-            <class name="waysOfCreateReqBody.WaysCreateBody">
-                <methods>
-                    <include name="createStudent"/>
-                    <include name="createStudentUsingJson"/>
-                </methods>
-            </class>
+<!--            <class name="parsingResponseDataJson.JsonDemo">-->
+<!--                <methods>-->
+<!--                    <include name="testJson2"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="waysOfCreateReqBody.WaysCreateBody">-->
+<!--                <methods>-->
+<!--                    <include name="createStudent"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>

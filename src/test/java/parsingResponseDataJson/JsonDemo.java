@@ -3,14 +3,12 @@ package parsingResponseDataJson;
 import io.restassured.response.Response;
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-public class Demo {
+public class JsonDemo {
 
 
 
